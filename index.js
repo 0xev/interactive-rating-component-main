@@ -5,7 +5,8 @@ const span = document.querySelector(".feedback");
 
 const rating = document.querySelectorAll(".btn");
 
-function submitRating() {
+function submitRating(event) {
+  event.preventDefault();
   thankyouElement.classList.remove("hidden");
   cardElement.classList.add("hidden");
   //   cardElement.style.display = "none";
@@ -13,7 +14,8 @@ function submitRating() {
 
 for (const rate of rating) {
   rate.addEventListener("click", () => {
-    span.textContent = rate.innerHTML;
+    span.textContent = rate.value;
+    console.log(rate.value);
   });
 }
 

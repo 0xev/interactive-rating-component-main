@@ -54,20 +54,24 @@ ul {
   align-items: center;
   margin-bottom: 2rem;
 }
-li button {
+li button,
+input {
   background-color: hsl(213, 20%, 22%);
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
+  border: none;
   color: hsl(0, 0%, 100%);
   transition: 0.3s;
 }
 
-li button:hover {
+li button:hover,
+li input:hover {
   background-color: hsl(25, 97%, 53%);
 }
 
-li button:focus {
+li button:focus,
+li input:focus {
   background-color: hsl(217, 12%, 63%);
 }
 
